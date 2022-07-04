@@ -17,19 +17,19 @@ function App() {
 
           <Switch>
 
-            <Route exact path="/">
+            <Route exact path="/react-blog/">
               <Home />
             </Route>
 
-            <Route exact path="/ivanblog">
+            <Route exact path="/react-blog/ivanblog">
               <IvanBlog />
             </Route>
 
-            <Route exact path="/create">
+            <Route exact path="/react-blog/create">
               <Create />
             </Route>
 
-            <Route exact path="/blogs/:id">
+            <Route exact path="/react-blog/blogs/:id">
               <BlogDetails />
             </Route>
 
