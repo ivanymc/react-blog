@@ -3,10 +3,14 @@ import useFetch from './useFetch';
 
 const Home = () => {
 
-    const { data: { blogs }, isLoading, error } = useFetch("https://ivanymc.github.io/react-blog-fakeRESTAPI/db.json");
+    const { data: blogs, isLoading, error } = useFetch("http://localhost:8000/blogs");
 
     return (
         <div className="home">
+
+            { console.log(isLoading) }
+            { console.log(blogs)}
+
             { error && <div> { error } </div>}
             { isLoading && <div> Loading... </div> }
             { blogs && <BlogList blogs={ blogs } title="All Blogs" /> }

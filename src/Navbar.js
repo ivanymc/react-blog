@@ -11,7 +11,7 @@ const Navbar = () => {
                 <Link to="/"> All Blogs </Link>
                 <Link to="/ivanblog"> Ivan's Blog </Link>
                 <Link to="/create"> 
-                    <button className='btn btn-danger'> Create New Blog </button>
+                    <button className='btn btn-primary'> Create New Blog </button>
                 </Link>
             </div>
         </nav>
