@@ -9,7 +9,7 @@ import NotFound from './NotFound';
 
 function App() { 
   return (
-    <BrowserRouter basename="{/react-blog}">    
+    <BrowserRouter basename="/react-blog">    
       <div className="App">
         <Navbar />
 
