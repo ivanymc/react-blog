@@ -4,11 +4,11 @@ import useFetch from "./useFetch";
 const BlogDetails = () => {
 
     const { id } = useParams();
-    const { data: blog, isLoading, error } = useFetch("https://ivanymc.github.io/react-blog-fakeRESTAPI/db.json/" + id);
+    const { data: blog, isLoading, error } = useFetch("http://localhost:8000/blogs" + id);
     const history = useHistory();
 
     const handleClick = () => {
-        fetch('https://ivanymc.github.io/react-blog-fakeRESTAPI/db.json/' + blog.id, {
+        fetch('http://localhost:8000/blogs' + blog.id, {
             method: "DELETE"
         }).then( () => {
             console.log("Blog Deleted");
