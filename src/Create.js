@@ -16,7 +16,7 @@ const Create = () => {
         setIsLoading(true);
 
         setTimeout( () => {
-            fetch("http://localhost:8000/blogs", {
+            fetch("https://ivanymc.github.io/react-blog-fakeRESTAPI/db.json", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(blog),
