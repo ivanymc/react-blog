@@ -9,7 +9,7 @@ import NotFound from './NotFound';
 
 function App() { 
   return (
-    <BrowserRouter>    
+    <BrowserRouter basename={"react-blog"}>    
       <div className="App">
         <Navbar />
 
@@ -17,19 +17,19 @@ function App() {
 
           <Switch>
 
-            <Route exact path="react-blog">
+            <Route exact path="/">
               <Home />
             </Route>
 
-            <Route exact path="/react-blog/ivanblog">
+            <Route exact path="/ivanblog">
               <IvanBlog />
             </Route>
 
-            <Route exact path="/react-blog/create">
+            <Route exact path="/create">
               <Create />
             </Route>
 
-            <Route exact path="/react-blog/blogs/:id">
+            <Route exact path="/blogs/:id">
               <BlogDetails />
             </Route>
 
