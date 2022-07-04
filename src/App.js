@@ -17,7 +17,7 @@ function App() {
 
           <Switch>
 
-            <Route exact path="/react-blog/">
+            <Route exact path="react-blog">
               <Home />
             </Route>
 
