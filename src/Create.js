@@ -16,16 +16,14 @@ const Create = () => {
         setIsLoading(true);
 
         setTimeout( () => {
-            fetch("http://localhost:8000/blogs", {
+            fetch("https://my-json-server.typicode.com/ivanymc/react-blog-fake-api/blogs", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(blog),
             }).then( () => {
                 console.log("New Blog Added");
+                console.log("Changes are faked and aren't persisted (just like JSONPlaceholder)");
                 setIsLoading(false);
-                console.log(blog);
-                console.log(blog[blog.length - 1]);
-
                 history.push(`/`);
             })
         }, 500)      

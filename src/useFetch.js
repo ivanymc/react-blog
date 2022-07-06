@@ -12,9 +12,11 @@ const useFetch = url => {
                     if( !res.ok ) {
                         throw Error("Could not fetch the data.");
                     }
+                    console.log(res);
                     return res.json();
                 })
                 .then( data => {
+                    console.log(data);
                     setData(data);
                     setIsLoading(false);
                     setError(null);

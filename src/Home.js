@@ -3,13 +3,10 @@ import useFetch from './useFetch';
 
 const Home = () => {
 
-    const { data: blogs, isLoading, error } = useFetch("http://localhost:8000/blogs");
+    const { data: blogs, isLoading, error } = useFetch("https://my-json-server.typicode.com/ivanymc/react-blog-fake-api/blogs");
 
     return (
         <div className="home">
-
-            { console.log(isLoading) }
-            { console.log(blogs)}
 
             { error && <div> { error } </div>}
             { isLoading && <div> Loading... </div> }
