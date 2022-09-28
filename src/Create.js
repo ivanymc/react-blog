@@ -16,7 +16,7 @@ const Create = () => {
         setIsLoading(true);
 
         setTimeout( () => {
-            fetch("https://node-blog-m1eg.onrender.com/reactBlogs", {
+            fetch("https://node-blog-m1eg.onrender.com/reactblogs", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(blog),
