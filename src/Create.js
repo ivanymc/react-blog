@@ -16,7 +16,7 @@ const Create = () => {
         setIsLoading(true);
 
         setTimeout( () => {
-            fetch("https://my-json-server.typicode.com/ivanymc/react-blog-fake-api/blogs", {
+            fetch("https://node-blog-m1eg.onrender.com/reactBlogs", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(blog),

@@ -3,7 +3,7 @@ import useFetch from './useFetch';
 
 const IvanBlog = () => {
 
-    const { data: blogs, isLoading, error } = useFetch("https://my-json-server.typicode.com/ivanymc/react-blog-fake-api/blogs");
+    const { data: blogs, isLoading, error } = useFetch("https://node-blog-m1eg.onrender.com/reactBlogs");
 
     return ( 
         <div className="home">

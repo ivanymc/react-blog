@@ -4,11 +4,11 @@ import useFetch from "./useFetch";
 const BlogDetails = () => {
 
     const { id } = useParams();
-    const { data: blog, isLoading, error } = useFetch('https://my-json-server.typicode.com/ivanymc/react-blog-fake-api/blogs/' + id);
+    const { data: blog, isLoading, error } = useFetch('https://node-blog-m1eg.onrender.com/reactBlogs/' + id);
     const history = useHistory();
 
     const handleClick = () => {
-        fetch('https://my-json-server.typicode.com/ivanymc/react-blog-fake-api/blogs/' + blog.id, {
+        fetch('https://node-blog-m1eg.onrender.com/reactBlogs/' + blog.id, {
             method: "DELETE"
         }).then( () => {
             console.log("Blog Deleted");
