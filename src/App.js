@@ -29,7 +29,7 @@ function App() {
               <Create />
             </Route>
 
-            <Route path="/blogs/:id">
+            <Route path="/blogs/:_id">
               <BlogDetails />
             </Route>
 
