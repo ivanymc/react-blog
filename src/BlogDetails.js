@@ -3,12 +3,12 @@ import useFetch from "./useFetch";
 
 const BlogDetails = () => {
 
-    const { id } = useParams();
-    const { data: blog, isLoading, error } = useFetch('https://react-blog-backend.onrender.com/reactblogs/' + id);
+    const { _id } = useParams();
+    const { data: blog, isLoading, error } = useFetch('https://react-blog-backend.onrender.com/reactblogs/' + _id);
     const history = useHistory();
 
     const handleClick = () => {
-        fetch('https://react-blog-backend.onrender.com/reactblogs/' + blog.id, {
+        fetch('https://react-blog-backend.onrender.com/reactblogs/' + blog._id, {
             method: "DELETE"
         }).then( () => {
             console.log("Blog Deleted");
