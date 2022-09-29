@@ -3,7 +3,7 @@ import useFetch from './useFetch';
 
 const Home = () => {
 
-    const { data: blogs, isLoading, error } = useFetch("https://node-blog-m1eg.onrender.com/reactblogs");
+    const { data: blogs, isLoading, error } = useFetch('https://react-blog-backend.onrender.com/reactblogs',);
 
     return (
         <div className="home">
