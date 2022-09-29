@@ -8,12 +8,12 @@ const BlogDetails = () => {
     const history = useHistory();
 
     const handleClick = () => {
-        fetch('https://react-blog-backend.onrender.com/reactblogs/' + blog._id, {
-            method: "DELETE"
-        }).then( () => {
-            console.log("Blog Deleted");
-            history.push("/");
-        })
+        fetch('https://react-blog-backend.onrender.com/reactblogs/' + blog._id, { method: "DELETE" })
+            .then( res => {
+                res.json();
+                console.log("Blog Deleted");
+                history.push("/");
+            })
     }
 
     return ( 
